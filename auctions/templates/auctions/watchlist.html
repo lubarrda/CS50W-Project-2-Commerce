@@ -1,0 +1,24 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2 class="my-4">Watchlist</h2>
+    <div class="row">
+        {% for listing in listings %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <img src="{{ listing.bildUrl }}" class="card-img-top"
+                         alt="{{ listing.title }}" />
+                    <div class="card-body">
+                        <h5 class="card-title">{{ listing.title }}</h5>
+                        <p class="card-text">{{ listing.description|slice:":200" }}{% if listing.description|length > 200 %}...{% endif %}</p>
+                        <a href="{% url 'listing' id=listing.id %}" class="btn btn-primary">Data</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-12">
+                <p class="text-center">No listings found in your watchlist.</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

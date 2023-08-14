@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to top, #ff6e7f, #bfe9ff);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333; 
+    padding: 10px;
+}
+
+a {
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    color: black
+}
+
+.container.mt-4 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container.mt-4, .register-container {
+    color: green; 
+}
+
+
+.register-container h2, .register-container label {
+    color: #333;
+}
+
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px;
+}
+
+.register-container h2 {
+    text-align: center;
+}
+
+.message {
+    background-color: #ffbbbb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #ffb3ba; 
+    border-color: #ff6e7f; 
+    color: white; 
+    width: 100%; 
+}
+
+.btn-primary:hover {
+    background-color: #ff6e7f;
+    border-color: #ff6e7f;
+}
+
+
